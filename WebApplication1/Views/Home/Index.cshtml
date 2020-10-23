@@ -1,0 +1,25 @@
+﻿@model IEnumerable<WebApplication1.Models.employeeAccessLayer>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<table class="table table-bordered table-responsive">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name1</th>
+            <th>Name2</th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.id</td>
+            <td>@item.lname</td>
+            <td>@item.fname</td>
+        </tr>
+
+    }
+
+
+</table>
